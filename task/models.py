@@ -20,4 +20,4 @@ class Location(models.Model):
     disbursement = models.IntegerField()
 
     def __str__(self):
-        return f"{self.province}--{self.commitments}"
+        return f"{self.muncipality}--{self.district}"

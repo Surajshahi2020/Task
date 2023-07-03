@@ -57,3 +57,9 @@ class TaskSerializer(serializers.Serializer):
             )
             government.save()
         return Location()
+
+
+class TaskListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Location
+        fields = "__all__"
